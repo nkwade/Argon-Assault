@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23496527303668514}
   - component: {fileID: 7637946239989772859}
   m_Layer: 0
-  m_Name: StarSparrow10
+  m_Name: Spaceship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

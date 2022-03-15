@@ -6,7 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    //Recieve Inputs
     [SerializeField] private InputAction movement;
+    [SerializeField] private InputAction fire;
+
+
+    [SerializeField] private GameObject[] lasers;
 
     //Speed for x and y movement
     [SerializeField] private float xSpeed;
@@ -28,9 +33,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable() {
         movement.Enable();
+        fire.Enable();
     }
     private void OnDisable() {
         movement.Disable();
+        fire.Disable();
     }
 
     // Update is called once per frame
@@ -38,9 +45,10 @@ public class PlayerController : MonoBehaviour
     {
         ProcessMovement();
         ProcessRotation();
-
+        ProcessFiring();
     }
 
+    
 
     private void ProcessMovement()
     {
@@ -64,5 +72,22 @@ public class PlayerController : MonoBehaviour
         float roll = horizontalThrow * inputRollFactor; //roll according to current input from player
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+    
+    private void ProcessFiring()
+    {
+        if (fire.IsPressed()) {
+            EnableLasers(true);
+        } else {
+            EnableLasers(false);
+        }
+    }
+    private void EnableLasers(bool set)
+    {
+        foreach (GameObject laser in lasers) {
+            ParticleSystem particleSystem = laser.GetComponent<ParticleSystem>();
+            var em = particleSystem.emission;
+            em.enabled = set;
+        }
     }
 }
