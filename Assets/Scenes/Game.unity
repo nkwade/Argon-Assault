@@ -261,8 +261,6 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -9144608986820886239, guid: 35bec21884fa5a5469561cdc72529b59, type: 2}
     value: {fileID: 121254949}
-  - key: {fileID: 8407255287742136621, guid: 35bec21884fa5a5469561cdc72529b59, type: 2}
-    value: {fileID: 2065522660}
   - key: {fileID: -9143464031105981042, guid: 35bec21884fa5a5469561cdc72529b59, type: 2}
     value: {fileID: 2065522660}
   m_ExposedReferences:
@@ -282,11 +280,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1526264640 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 929069100589337885, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-  m_PrefabInstance: {fileID: 3142677348103179555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1576045816
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,11 +312,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1822103868 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3130238533288833146, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-  m_PrefabInstance: {fileID: 3142677348103179555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2065522660 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3142677347984347847, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
@@ -346,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3142677347984347840, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46.3
+      value: 49.94
       objectReference: {fileID: 0}
     - target: {fileID: 3142677347984347840, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -384,54 +372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_Id
-      value: 6eeea9bc-728a-41a0-84e8-2ba369ba885c
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_Name
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 1822103868}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 1526264640}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
-      value: 21420d10-726c-4728-b990-189552834b0d
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Id
-      value: 71e60e77-9150-40b0-865d-09d30f3f19cf
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Mouse>/leftButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <Gamepad>/rightTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 4783499856683612557, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
-      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Action
-      value: Fire
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5acc86020b33a4b98728771111982d, type: 3}
 --- !u!1001 &5879659318775476561
@@ -441,6 +381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5879659319050629006, guid: c0b146370f4efcd479f8283a003424fc, type: 3}
+      propertyPath: m_EnableTreeColliders
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5879659319050629007, guid: c0b146370f4efcd479f8283a003424fc, type: 3}
       propertyPath: m_Name
       value: Terrain
@@ -516,7 +460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5968357576999870189, guid: b0e1c869a66ff394bb518a20d3aab8e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 264.3
+      value: 268.8
       objectReference: {fileID: 0}
     - target: {fileID: 5968357576999870189, guid: b0e1c869a66ff394bb518a20d3aab8e4, type: 3}
       propertyPath: m_LocalRotation.w
