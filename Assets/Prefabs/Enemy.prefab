@@ -132,4 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1956917418090007376, guid: 44e23bb56862af840bc194effd6bb93b, type: 3}
+  hit: {fileID: 1956917418090007376, guid: d2374a4ad11758d49a3a161dc71ee82e, type: 3}
   parent: {fileID: 0}
+  pointValue: 1
+  hitPoints: 2
