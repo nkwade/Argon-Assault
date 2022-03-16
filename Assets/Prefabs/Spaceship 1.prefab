@@ -958,7 +958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc448178cd8f21498f70f9a261d3043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reloadDelay: 1
+  explosion: {fileID: 7875612977552809220}
+  reloadDelay: 0.5
 --- !u!65 &4994536799378318677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -967,7 +968,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4988362914054133224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 9.865558, y: 4.0080643, z: 11.309124}
@@ -1617,6 +1618,11 @@ PrefabInstance:
 --- !u!4 &4601672290736088599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2753390460627063042, guid: 164085f841702c94999e5d66424c17e0, type: 3}
+  m_PrefabInstance: {fileID: 1867426596688049941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7875612977552809220 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8404177457250888209, guid: 164085f841702c94999e5d66424c17e0, type: 3}
   m_PrefabInstance: {fileID: 1867426596688049941}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6355249568488116123
